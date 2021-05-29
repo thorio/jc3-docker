@@ -1,0 +1,12 @@
+---
+version: "3.7"
+
+services:
+  server:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 4200:4200/udp
+      - 4201:4201/udp
+      - 4202:4202/udp
+      - 4203:4203/tcp
